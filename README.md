@@ -14,7 +14,7 @@ Oficjalny plugin do integracji Twojego serwera Minecraft z portalem [listaserwer
 
 ## ⚙️ Instalacja
 
-1.  Pobierz najnowszą wersję pluginu z [sekcji Releases na GitHubie](https://github.com/twoj-profil/twoja-nazwa-repo/releases).
+1.  Pobierz najnowszą wersję pluginu z [sekcji Releases na GitHubie](https://github.com/ListaSerwery/ListaSerweryPlugin/releases).
 2.  Umieść pobrany plik `.jar` w folderze `plugins` na swoim serwerze.
 3.  Uruchom serwer, aby wygenerować plik konfiguracyjny `config.yml`.
 4.  Zatrzymaj serwer i przejdź do konfiguracji.
@@ -61,4 +61,5 @@ Po zakończeniu konfiguracji uruchom serwer ponownie.
 -   `/odbierz` - Główna komenda dla graczy, służąca do odebrania nagrody za głos.
 ---
 *Plugin stworzony do integracji z portalem [listaserwery.pl](https://listaserwery.pl)*
+
 

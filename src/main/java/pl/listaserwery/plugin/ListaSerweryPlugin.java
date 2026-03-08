@@ -17,8 +17,7 @@ public final class ListaSerweryPlugin extends JavaPlugin {
     public void onEnable() {
         // Inicjalizacja konfiguracji
         this.saveDefaultConfig();
-        
-        // Dynamiczna rejestracja komendy
+
         this.registerCommand();
 
         this.getLogger().info("ListaSerweryPlugin zostal pomyslnie uruchomiony!");
@@ -47,3 +46,4 @@ public final class ListaSerweryPlugin extends JavaPlugin {
         }
     }
 }
+

@@ -24,10 +24,16 @@ Oficjalny plugin do integracji Twojego serwera Minecraft z portalem [listaserwer
 Otwórz plik `plugins/ListaSerweryPlugin/config.yml` i uzupełnij go swoimi danymi z panelu [listaserwery.pl](https://listaserwery.pl).
 
 ```yaml
-# Twój klucz API (skopiuj z panelu listaserwery.pl)
+# Ustawienia komendy do odbierania nagród
+command:
+  name: "odbierz"
+  aliases: ["odbierznagrode", "vote"]
+  cooldown-seconds: 60
+
+# Twój klucz API. Znajdziesz go na stronie listaserwery.pl w zakładce "Moje serwery".
 api-key: "ZMIEN_MNIE"
 
-# ID Twojego serwera (skopiuj z panelu listaserwery.pl)
+# ID Twojego serwera. Znajdziesz go na stronie listaserwery.pl w zakładce "Moje serwery".
 server-id: "ZMIEN_MNIE"
 
 # Komendy do wykonania po udanym odebraniu nagrody.
@@ -42,12 +48,14 @@ messages:
   prefix: "&8[&bListaSerwery&8] "
   checking: "&7Sprawdzam dostępność nagrody..."
   success: "&aPomyślnie odebrano nagrodę za głos! Dziękujemy."
-  no-vote: "&cNie masz żadnych nieodebranych nagród..."
+  no-vote: "&cNie masz żadnych nieodebranych nagród, lub głos nie został jeszcze zarejestrowany. Zazwyczaj trwa to około minuty od zagłosowania."
   invalid-setup: "&cPlugin nie jest poprawnie skonfigurowany. Skontaktuj się z administracją."
   api-error: "&cWystąpił błąd podczas łączenia z API listaserwery.pl. Spróbuj ponownie później."
   rate-limit: "&cZbyt wiele zapytań. Odczekaj chwilę przed ponowną próbą."
   already-claimed: "&cOdebrałeś już nagrodę za ostatni głos! Następny głos możliwy za: &e%timeLeft%"
   vote-link: "&aKliknij tutaj, aby zaglosowac!"
+  cooldown: "&cMusisz odczekać jeszcze &e%seconds% &csekund przed ponownym użyciem komendy."
+
 ```
 
 -   `api-key`: Twój unikalny klucz API dostępny w panelu serwera na listaserwery.pl.
@@ -61,5 +69,6 @@ Po zakończeniu konfiguracji uruchom serwer ponownie.
 -   `/odbierz` - Główna komenda dla graczy, służąca do odebrania nagrody za głos.
 ---
 *Plugin stworzony do integracji z portalem [listaserwery.pl](https://listaserwery.pl)*
+
 
 

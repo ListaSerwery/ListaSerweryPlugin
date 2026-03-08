@@ -9,7 +9,6 @@ Oficjalny plugin do integracji Twojego serwera Minecraft z portalem [listaserwer
 -   **Wiadomości:** Możliwość pełnej personalizacji wiadomości z domyślnymi wartościami zapobiegającymi błędom.
 -   **Komenda w grze:** Gracze mogą odebrać nagrodę za pomocą prostej komendy `/odbierz`.
 -   **Inteligentne sprawdzanie:** Plugin informuje gracza, jeśli już odebrał nagrodę i kiedy będzie mógł zagłosować ponownie.
--   **Wydajność:** Wszystkie zapytania do API są wykonywane asynchronicznie, aby nie obciążać serwera.
 
 ## ⚙️ Instalacja
 
@@ -68,6 +67,7 @@ Po zakończeniu konfiguracji uruchom serwer ponownie.
 -   `/odbierz` - Główna komenda dla graczy, służąca do odebrania nagrody za głos.
 ---
 *Plugin stworzony do integracji z portalem [listaserwery.pl](https://listaserwery.pl)*
+
 
 
 

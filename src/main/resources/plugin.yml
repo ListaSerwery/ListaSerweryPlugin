@@ -1,0 +1,7 @@
+name: ListaSerwery
+version: '${project.version}'
+main: pl.listaserwery.plugin.ListaSerweryPlugin
+api-version: 1.13
+description: Oficjalny plugin listaserwery.pl do odbierania nagród za głosowanie na serwer.
+authors: [listaserwery]
+website: https://listaserwery.pl
